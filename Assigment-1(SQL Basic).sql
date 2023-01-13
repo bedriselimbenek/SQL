@@ -21,10 +21,6 @@ SELECT customer_id, MIN(order_date) first_order_date
 FROM sale.orders
 GROUP BY customer_id
 
-SELECT order_id, product_id, MIN(list_price) cheap_price
-FROM sale.order_item
-GROUP BY order_id, product_id 
-ORDER BY cheap_price DESC;
 
 -- 4. Find the total amount of each order. Your solution should include order id and total amount sorted from highest to lowest.
 
