@@ -15,7 +15,11 @@ SELECT order_id, SUM(quantity) tot_quant
 FROM sale.order_item
 GROUP BY order_id;
 
--- 3. Find the cheapest product id for each order id. Your solution should include order id, product id and list price sorted from highest to lowest.
+-- 3. Find the first order date for each customer_id.
+
+SELECT customer_id, MIN(order_date) first_order_date
+FROM sale.orders
+GROUP BY customer_id
 
 SELECT order_id, product_id, MIN(list_price) cheap_price
 FROM sale.order_item
