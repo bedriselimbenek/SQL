@@ -1,5 +1,5 @@
 
-Assignment-4 (Charlies Chocolate Factory)
+-- Assignment-4 (Charlies Chocolate Factory)
 
 
 CREATE DATABASE Manufacturer;
